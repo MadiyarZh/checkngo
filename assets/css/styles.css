@@ -1,0 +1,230 @@
+/* Reset styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, header, footer, nav, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 1.6;
+    background-color: #EFEFEE;
+}
+
+/* Header styles start */
+
+header {
+    background-color: #1F557C;
+    color: #fff;
+    padding: 15px 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Header styles end */
+
+
+
+/* Main page styles start */
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+/* Form styles start */
+
+#userForm {
+    width: 400px;
+    margin: 20px auto;
+    padding: 40px 20px;
+    border-radius: 6px;
+    background: #D3CADE;
+    text-align: center;
+}
+
+#userForm input {
+    width: calc(100% - 10px);
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    color: #555;
+}
+
+#userForm input:focus {
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+	outline: none;
+}
+
+.standart-btn {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: max-content;
+    padding: 15px 32px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    border-radius: 6px;
+    color: #fff;
+    background-color: blue;
+    cursor: pointer;
+}
+
+#userForm #addUserBtn {
+    background: #000;
+    border-top:#000000;
+    border-bottom: #000000;
+    border-left: #000000;
+    border-right: #000000;
+}
+
+#userForm #addUserBtn:hover,
+#userForm #addUserBtn:active {
+    background-color: #ffffff;
+    border-top:#ffffff;
+    border-bottom: #ffffff;
+    border-left: #ffffff;
+    border-right: #ffffff;
+    color: #000000;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#resetBtn {
+    background-color: #f44336;
+    width: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+#resetBtn:hover {
+    background-color: #d32f2f;
+}
+
+/* Form styles end */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+tr {
+    border: 1px solid #d1d1d1;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+button {
+    margin-top: 10px;
+}
+
+/* Main page styles end */
+
+
+/* Footer styles */
+
+footer {
+    background-color: #1F557C;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* Footer Styles end */
+
+
+/* Media  */
+
+@media only screen and (max-width: 768px) {
+    
+    .header {
+        flex-direction: column;
+        gap: 20px;  
+    }
+
+    #userForm {
+        width: calc(100% - 10px);
+        margin: 20px auto;
+        padding: 20px 10px;    
+    }
+
+    #userForm input {
+        padding: 10px;
+        margin-bottom: 3%;
+    }
+
+    .standart-btn {
+        padding: 10px 20px;
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    td:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
