@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 row.innerHTML = `
                     <td>${user.name}</td>
                     <td>${user.email}</td>
-                    <td>€${(100 / users.length).toFixed(2)}</td>
+                    <td>€${user.amount_share}</td>
                 `;
                 tableBody.appendChild(row);
             });

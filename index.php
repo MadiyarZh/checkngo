@@ -38,7 +38,7 @@ include 'includes/header.php';
                         <tr>
                             <td><?php echo $user['name']; ?></td>
                             <td><?php echo $user['email']; ?></td>
-                            <td>€<?php echo number_format((100 / count($users)), 2); ?></td>
+                            <td>€<?php echo $user['amount_share']; ?></td>
                         </tr>
                     <?php } ?>
                 <?php } ?>
